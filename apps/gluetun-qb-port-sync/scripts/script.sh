@@ -79,10 +79,10 @@ main() {
 
   external_ip=$(get_gluetun_external_ip)
 
-  if [[ -z "${external_ip}" ]]; then
-    log --level error "External IP is empty. Potential VPN or internet connection issue."
-    exit 1
-  fi
+#   if [[ -z "${external_ip}" ]]; then
+#     log --level error "External IP is empty. Potential VPN or internet connection issue."
+#     exit 1
+#   fi
 
   gluetun_port=$(get_gluetun_forwarded_port)
   qbittorrent_port=$(get_qb_listen_port)
